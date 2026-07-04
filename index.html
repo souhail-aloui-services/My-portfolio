@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Souhail Alaoui | Portfolio</title>
+    <title>Souhail Alaoui | مصمم مواقع</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
         body { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; padding: 50px 20px; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
-        .container { max-width: 700px; background: rgba(0,0,0,0.3); padding: 50px; border-radius: 20px; backdrop-filter: blur(10px); box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
-        h1 { font-size: 52px; color: #fff; letter-spacing: 2px; margin-bottom: 15px; }
-        .v-line { width: 4px; height: 50px; background: #00ff88; margin: 0 auto 20px auto; border-radius: 2px; }
+        .container { max-width: 700px; background: rgba(0,0,0,0.3); padding: 50px; border-radius: 20px; backdrop-filter: blur(10px); }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid #00ff88; margin-bottom: 20px; object-fit: cover; }
+        h1 { font-size: 52px; color: #00ff88; margin-bottom: 15px; }
         .title { font-size: 22px; color: #00ff88; margin-bottom: 25px; font-weight: bold; }
         p { font-size: 18px; line-height: 1.8; margin-bottom: 30px; }
-        .btn { display: inline-block; padding: 14px 35px; background: #00ff88; color: #111; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; transition: 0.3s; }
+        .btn { display: inline-block; padding: 14px 35px; background: #00ff88; color: #111; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; transition: 0.3s; margin: 5px; }
         .btn:hover { transform: scale(1.05); background: #00cc6a; }
+        .btn-whatsapp { background: #25D366; color: white; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Souhail Alaoui</h1>
-        <div class="v-line"></div>
-        <p class="title">مصمم ومبرمج مواقع ويب</p>
-        <p>
-            مرحبا بكم في Portfolio الخاص بي <br>
-            نقوم بتصميم مواقع عصرية واحترافية تناسب جميع الأجهزة
-        </p>
-        <a href="#" class="btn">تواصل معي</a>
+        <!-- صورتك -->
+        <img src="https://via.placeholder.com/150" class="profile-img" alt="صورتي">
+
+        <h1>مرحبا، أنا Souhail Alaoui</h1>
+        <div class="title">مصمم و مطور مواقع ويب</div>
+        <p>نصمم ليك موقع احترافي متجاوب مع الهاتف فـ 7 أيام <br> Portfolio ديالي فيه آخر الأعمال ديالي</p>
+        
+        <a href="projects.html" class="btn">أعمالي</a>
+        <a href="https://wa.me/212785330968" class="btn btn-whatsapp">تواصل معي</a>
     </div>
 </body>
 </html>
