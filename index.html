@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سهيل العلاوي | مصمم مواقع</title>
+    <title>souhail alaoui| مصمم مواقع</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
         
@@ -106,26 +106,51 @@
             margin: 5px;
             font-weight: bold;
         }
+        
+        /* الإطارات الجديدة للتواصل */
         .social h2 {
             color: #9b59b6;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
             font-size: 1.8em;
         }
-        .social a {
+        .contact-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .contact-card {
+            background: #111;
+            border: 2px solid #9b59b6;
+            border-radius: 15px;
+            padding: 20px;
+            width: 200px;
+            transition: 0.3s;
+            box-shadow: 0 0 15px rgba(155, 89, 182, 0.2);
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px #9b59b6;
+            border-color: #fff;
+        }
+        .contact-card .icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .contact-card a {
             color: #9b59b6;
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
             font-weight: bold;
-            transition: 0.3s;
+            font-size: 1.1em;
+            display: block;
         }
-        .social a:hover {
+        .contact-card a:hover {
             color: #fff;
-            text-shadow: 0 0 10px #9b59b6;
         }
-        .code-icon {
-            font-size: 2em;
-            margin: 10px;
+        .contact-card p {
+            color: #aaa;
+            font-size: 0.9em;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -136,7 +161,7 @@
         <h1>سهيل العلاوي</h1>
         <p class="subtitle">مصمم مواقع ويب | مطور واجهات</p>
         
-        <div class="code-icon">💻 ⚡ { } </div>
+        <div style="font-size: 2em; margin: 10px;">💻 ⚡ { } </div>
         
         <a href="projects.html" class="btn">📂 شوف الخدمة ديالي</a>
         <a href="#contact" class="btn">📞 تواصل معايا</a>
@@ -158,9 +183,27 @@
 
         <div class="social" id="contact">
             <h2>تواصل معايا</h2>
-            <a href="https://wa.me/212785330968" target="_blank">💬 واتساب</a>
-            <a href="https://www.instagram.com/souhail_alaoui_10" target="_blank">📸 انستغرام</a>
-            <a href="mailto:ffmodilf@gmail.com">📧 الايميل</a>
+            <div class="contact-box">
+                
+                <div class="contact-card">
+                    <div class="icon">💬</div>
+                    <a href="https://wa.me/212785330968" target="_blank">واتساب</a>
+                    <p>212785330968</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="icon">📸</div>
+                    <a href="https://www.instagram.com/souhail_alaoui_10" target="_blank">انستغرام</a>
+                    <p>@souhail_alaoui_10</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="icon">📧</div>
+                    <a href="mailto:ffmodilf@gmail.com">الايميل</a>
+                    <p>ffmodilf@gmail.com</p>
+                </div>
+
+            </div>
         </div>
     </div>
 </body>
